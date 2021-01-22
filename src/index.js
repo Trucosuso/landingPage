@@ -14,7 +14,6 @@ $(function () {
     // Botón de suscribirse lleva a la posición correcta con una animación
     let botonSuscribirse = $("#botonSuscribirse");
     botonSuscribirse.on("click", () => {
-        console.log($("#formulario").position().top);
         $("html").animate({ scrollTop: $("#formulario").position().top - 100 }, 1000);
     });
 
@@ -39,7 +38,6 @@ $(function () {
 
     // Validación de formulario
     $("#nombre").on("keyup", function () {
-        console.log(this.value);
         /** @type {RegExp} */
         let expresion = /\d/;
 
@@ -55,10 +53,8 @@ $(function () {
     });
 
     $("#telefono").on("keyup", function () {
-        console.log(this.value);
         /** @type {RegExp} */
         let expresion = /^[6-9]\d{8}$/;
-        console.log(expresion.test(this.value));
 
         if (!expresion.test(this.value)) {
             this.setCustomValidity("Escriba un teléfono válido");
@@ -72,10 +68,8 @@ $(function () {
     });
 
     $("#email").on("keyup", function () {
-        console.log(this.value);
         /** @type {RegExp} */
         let expresion = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
-        console.log(expresion.test(this.value));
 
         if (!expresion.test(this.value)) {
             this.setCustomValidity("Introduzca un email válido");
@@ -230,7 +224,6 @@ function maquetarTestimonios(testimonios) {
     // Si está activada la vista tabla sólo maquetar esta. Si no sólo maquetar los divs
     if (vistaTabla) {
         $.each($(sectionTestimonios).children("div"), (index, elemento) => {
-            console.log(elemento);
             $(elemento).css("display", "none");
         });
     } else {
