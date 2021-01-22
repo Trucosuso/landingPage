@@ -1,0 +1,378 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.icono {
+    height: 2rem;
+}
+
+.blanco {
+    fill: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.boton {
+    padding: 1rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    background-color: #7da60c;
+    color: black;
+}
+
+.boton:hover {
+    color: black;
+    background-color: white;
+}
+
+.boton:disabled {
+    color: white;
+    background-color: rgb(76, 85, 50);
+}
+
+.boton:disabled:hover {
+    color: white;
+    background-color: rgb(76, 85, 50);
+}
+
+.boton.noImportante {
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+}
+
+.boton.noImportante:hover {
+    background-color: black;
+    color: white;
+}
+
+.botonSubir {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #7da60c;
+    border: 0;
+    border-radius: 50px;
+    fill: black;
+    text-align: center;
+    box-shadow:0 0 10px #000000;
+    display: none;
+}
+
+body > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+body > header a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero h1 {
+    font-family: 'Mansalva', serif;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+.hero > video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero > section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 10px #000000;
+}
+
+body > section {
+    max-width: 1140px;
+    display: grid;
+    gap: 1rem;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+footer a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.tarjeta {
+    display: grid;
+}
+
+.tarjeta > img {
+    width: 100%;
+}
+
+/* Estilos ofertas */
+#ofertas > h1 {
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    font-variant: small-caps;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.oferta {
+    grid-template-areas:    "titulo enlace"
+                            "texto  texto"
+                            "imagen imagen";
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.oferta > h2 {
+    grid-area: titulo;
+    margin: 0;
+    text-align: center;
+}
+
+.oferta > a {
+    grid-area: enlace;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.oferta > p {
+    grid-area: texto;
+    margin: 1rem;
+    text-align: center;
+}
+
+.oferta > img {
+    grid-area: imagen;
+    align-self: flex-end;
+}
+
+/* Estilos testimonios */
+#testimonios > header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonios h1 {
+    text-align: center;
+    margin: 0 1rem;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+.testimonio {
+    grid-template-areas:    "nombre     imagen"
+                            "texto      imagen"
+                            "puntuacion fecha";
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.testimonio > h2 {
+    grid-area: nombre;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.testimonio > p {
+    margin: 0;
+}
+
+.testimonio > p:first-of-type {
+    grid-area: texto;
+}
+
+.testimonio > p:nth-of-type(2) {
+    grid-area: puntuacion;
+}
+
+.testimonio > img {
+    grid-area: imagen;
+}
+
+.testimonio > p:last-of-type {
+    grid-area: fecha;
+    text-align: center;
+}
+
+.estrella {
+    height: 1.5rem;
+}
+
+table {
+    width: 100%;
+    overflow-x: scroll;
+    border-collapse: collapse;
+}
+
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table img {
+    vertical-align: middle;
+}
+
+/* Estilos formulario */
+#formulario {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+#formulario > h1 {
+    font-variant: small-caps;
+    text-align: center;
+    margin: 0;
+}
+
+form {
+    display: grid;
+}
+
+form > button {
+    font-size: 1.2rem;
+}
+
+/* Móvil */
+.tarjeta {
+    width: 100%;
+}
+
+#formulario {
+    width: 100%;
+}
+
+form {
+    gap: 1rem;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+form > button {
+    grid-column-start: span 2;
+}
+
+footer {
+    flex-flow: column nowrap;
+}
+
+footer > p {
+    text-align: center;
+}
+
+table img {
+    height: 50px;
+}
+
+/* Tablet */
+@media screen and (min-width:576px){
+    #ofertas {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+    }
+
+    #ofertas > h1 {
+        grid-column-start: span 2;
+    }
+
+    #formulario {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    #testimonios {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+    }
+
+    #testimonios > header, table{
+        grid-column-start: span 2;
+    }
+
+    table img {
+        height: 100px;
+    }
+}
+
+/* Escritorio */
+@media screen and (min-width:760px){
+    #ofertas {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1rem;
+    }
+
+    #ofertas > h1 {
+        grid-column-start: span 3;
+    }
+
+    #formulario {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    #testimonios {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1rem;
+    }
+
+    #testimonios > header, table {
+        grid-column-start: span 3;
+    }
+}

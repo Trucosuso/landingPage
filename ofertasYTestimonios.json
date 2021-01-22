@@ -1,0 +1,112 @@
+{
+    "ofertas": [
+        {
+            "titulo": "2 Medianas 10 €",
+            "texto": "2 pizzas medianas de 25 cm por 10 €",
+            "link": "#",
+            "imagen": "resources/productos/pizza1.jpg"
+        },
+        {
+            "titulo": "2x1",
+            "texto": "Compra dos y paga una. En todas nuestras pizzas",
+            "link": "#",
+            "imagen": "resources/productos/pizza2.jpg"
+        },
+        {
+            "titulo": "2 Familiares 15 €",
+            "texto": "2 pizzas familiares de 35 cm por 15 €",
+            "link": "#",
+            "imagen": "resources/productos/pizza3.jpg"
+        },
+        {
+            "titulo": "Mediana 6 €",
+            "texto": "Pizza mediana de 25 cm por 6 €",
+            "link": "#",
+            "imagen": "resources/productos/pizza4.jpg"
+        },
+        {
+            "titulo": "4 Familiares y Refresco 25 €",
+            "texto": "Refresco de 2 l a elegir y 4 pizzas familiares de 35 cm por 25 €",
+            "link": "#",
+            "imagen": "resources/productos/pizza5.jpg"
+        },
+        {
+            "titulo": "Familiar 9 €",
+            "texto": "Pizza mediana de 25 cm por 9 €",
+            "link": "#",
+            "imagen": "resources/productos/pizza6.jpg"
+        }
+    ],
+    "testimonios": [
+        {
+            "nombre": "María Elena Pina Iranzo",
+            "texto": "¡Las mejores pizzas de Granada!",
+            "fecha": "12/01/2021",
+            "imagen": "resources/clientes/cliente1.jpg",
+            "puntuacion": 10
+        },
+        {
+            "nombre": "Carmen Baena Arribas",
+            "texto": "Unas pizzas maravillosas",
+            "fecha": "03/12/2020",
+            "imagen": "resources/clientes/cliente2.jpg",
+            "puntuacion": 9
+        },
+        {
+            "nombre": "Gregorio Vela Salmerón",
+            "texto": "Perfectas para una buena cena de Nochebuena en cuarentena",
+            "fecha": "24/12/2020",
+            "imagen": "resources/clientes/cliente3.jpg",
+            "puntuacion": 10
+        },
+        {
+            "nombre": "Joaquin Landa Morales",
+            "texto": "¡Mi nueva pizzería favorita!",
+            "fecha": "21/01/2021",
+            "imagen": "resources/clientes/cliente4.jpg",
+            "puntuacion": 10
+        },
+        {
+            "nombre": "Rosario Valenciano Solera",
+            "texto": "Pizzas grandes y baratas",
+            "fecha": "10/10/2020",
+            "imagen": "resources/clientes/cliente5.jpg",
+            "puntuacion": 9
+        },
+        {
+            "nombre": "Nuria Vicente Cabo",
+            "texto": "Nunca había comido unas pizzas tan buenas",
+            "fecha": "12/08/2020",
+            "imagen": "resources/clientes/cliente6.jpg",
+            "puntuacion": 10
+        },
+        {
+            "nombre": "Sergio Gallegos Magro",
+            "texto": "Servicio rápido",
+            "fecha": "04/01/2021",
+            "imagen": "resources/clientes/cliente7.jpg",
+            "puntuacion": 8
+        },
+        {
+            "nombre": "Ésther Píscore",
+            "texto": "¡No ha llegado el momento de mi existencia y ya puedo saborear estas pizzas!",
+            "fecha": "22/01/2124",
+            "imagen": "resources/clientes/cliente8.jpg",
+            "puntuacion": 10
+        },
+        {
+            "nombre": "Miguel Criado Junquera",
+            "texto": "Muy buenas pizzas y servicio rápido",
+            "fecha": "01/02/2020",
+            "imagen": "resources/clientes/cliente9.jpg",
+            "puntuacion": 10
+        },
+        {
+            "nombre": "Martín Montes Olmo",
+            "texto": "Nunca he pedido aquí, no se por qué estoy contestando esto",
+            "fecha": "28/12/2020",
+            "imagen": "resources/clientes/cliente10.jpg",
+            "puntuacion": 10
+        }
+    ]
+}
