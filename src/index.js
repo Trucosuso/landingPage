@@ -15,18 +15,18 @@ $(function () {
     let botonSuscribirse = $("#botonSuscribirse");
     botonSuscribirse.on("click", () => {
         console.log($("#formulario").position().top);
-        $("html").animate( { scrollTop: $("#formulario").position().top - 100 }, 1000);
+        $("html").animate({ scrollTop: $("#formulario").position().top - 100 }, 1000);
     });
 
     // Logo sube al principio de la página
     let logo = $("#logo");
     $(logo).on("click", () => {
-        $("html").animate( { scrollTop: 0 }, 1000);
+        $("html").animate({ scrollTop: 0 }, 1000);
     });
     // Botón scrollear hacia arriba
     let botonSubir = $(".botonSubir");
     $(botonSubir).on("click", () => {
-        $("html").animate( { scrollTop: 0 }, 1000);
+        $("html").animate({ scrollTop: 0 }, 1000);
     });
     // Solo muestra el botón cuando se baja a más de 700px
     $(document).on("scroll", () => {
@@ -293,13 +293,13 @@ class Testimonio extends HTMLDivElement {
             .append(`<p>${texto}</p>`)
             .append(`<img src="${imagen}" alt="${nombre}">`)
             .append("<p class=\"puntuacion\">");
-        
+
         // Añadir las estrellas correspondientes. Máximo 5.
         let i = 1;
-        for (i; i <= puntuacion/2; i++) {
+        for (i; i <= puntuacion / 2; i++) {
             $(".puntuacion", this).append("<img src=\"resources/estrella.svg\" alt=\"\" class=\"estrella\">");
         }
-        if (i - puntuacion/2 == 0.5) {
+        if (i - puntuacion / 2 == 0.5) {
             $(".puntuacion", this).append("<img src=\"resources/mediaEstrella.svg\" alt=\"\" class=\"media estrella\">");
         }
 
@@ -326,13 +326,13 @@ class FilaTestimonio extends HTMLTableRowElement {
             .append(`<td>${texto}</td>`)
             .append(`<td><img src="${imagen}" alt="${nombre}"></td>`)
             .append("<td class=\"puntuacion\">");
-        
+
         // Añadir las estrellas correspondientes. Máximo 5.
         let i = 1;
-        for (i; i <= puntuacion/2; i++) {
+        for (i; i <= puntuacion / 2; i++) {
             $(".puntuacion", this).append("<img src=\"resources/estrella.svg\" alt=\"\" class=\"estrella\">");
         }
-        if (i - puntuacion/2 == 0.5) {
+        if (i - puntuacion / 2 == 0.5) {
             $(".puntuacion", this).append("<img src=\"resources/mediaEstrella.svg\" alt=\"\" class=\"media estrella\">");
         }
 
